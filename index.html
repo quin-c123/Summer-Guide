@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Summer Guide</title>
+  <link href="style.css" rel="stylesheet" type="text/css" /><link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    button {background-color:#424242 ; color:powderblue ;}
+    body {background-color: powderblue; color:#424242}
+    body {
+      font-family: "Arial";
+    }
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:active { text-decoration: none; }
+    a { color: inherit; } 
+  </style>
+  <script>
+    var colors = ["#424242", "powderblue"]
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("body");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+      
+    }
+</script>
+    <script>
+    var textcolors = ["powderblue", "#424242"]
+    var colorIndextext = 0;
+    function changeTextColor() {
+        var col = document.getElementById("body");
+        if( colorIndextext >= textcolors.length ) {
+            colorIndextext = 0;
+        }
+        body.style.color = textcolors[colorIndextext];
+        colorIndextext++;
+      
+    }
+</script>
+</head>
+
+<body>
+
+    <body id='body'>
+    <header>
+        <button onclick="changeColor(); changeTextColor();">Toggle dark mode</button>
+      <br><br>
+      <img src="https://images.nymag.com/guides/summer/summerGuideheader.svg" alt="Summer Guide Image">
+    </header>
+  <h2>The NYC summer guide (for manhattan)</h2>
+  <h3>Links</h3>
+  <a href=thingstodo.html>Things to do</a>
+  <br>
+  <a href=websites.html>Websites and Games</a>
+  
+  
+  <footer>
+  <p>Website made by PS87</p>
+  <button onclick="location.href='info.html'" type="button">About This <br>Website</button>
+  <button onclick="location.href='credits.html'" type="button">Credits And<br> Assets</button>
+</footer>
+</body>
+
+
+</html>

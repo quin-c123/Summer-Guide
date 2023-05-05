@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Summer Guide</title>
+  <link href="style.css" rel="stylesheet" type="text/css" /><link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    button {background-color:#424242 ; color:powderblue ;}
+    body {background-color: powderblue; color:#424242}
+    body {
+      font-family: "Arial";
+    }
+    a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+  </style>
+  <script>
+    var colors = ["#424242", "powderblue"]
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("body");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+      
+    }
+</script>
+    <script>
+    var textcolors = ["powderblue", "#424242"]
+    var colorIndextext = 0;
+    function changeTextColor() {
+        var col = document.getElementById("body");
+        if( colorIndextext >= textcolors.length ) {
+            colorIndextext = 0;
+        }
+        body.style.color = textcolors[colorIndextext];
+        colorIndextext++;
+      
+    }
+</script>
+</head>
+
+<body>
+
+    <body id='body'>
+    <header>
+        <button onclick="changeColor(); changeTextColor();">Toggle dark mode</button>
+          <button onclick="location.href='index.html'" type="button">Back to homepage</button>
+      <br><br>
+      <img src="https://images.nymag.com/guides/summer/summerGuideheader.svg" alt="Summer Guide Image">
+    </header>
+    <h2>Things to do</h2>
+    <h3>Little Island</h3>
+    <p><b>When:</b> Anytime <b>Where: </b> 14th St, 10th Avenue <b>Cost:</b> free</p></p>
+    <p>If you're looking for a beautiful and fun place to go this summer, Little Island is the place to go!<br> Stroll through the gardens or watch the sunset on the hudson river. Or, bring your kids and try the dance pads and see how long you can hula-hoop!</p>
+    <button onclick="location.href='https://littleisland.org'" type="button">Visit Website (LittleIsland.org)</button>
+    <h3>Riverbank State Park (Pool)</h3>
+    <p><b>When:</b> Anytime <b>Where: </b> 145th St, Riverside Drive <b>Cost:</b> $2 /adult, $1 /child</p></p>
+    <p>Wanna go swimming? Just visit Riverank State Park. There, you'll find a pool, some playgrounds, and more.<br> At just $2 per person, this is sure to deliver a fun time!</p>
+    <button onclick="location.href='https://parks.ny.gov/parks/93'" type="button">Visit Website (Parks.Ny.Gov)</button>
+    <h3>Bow Bridge at Central Park</h3>
+    <p><b>When:</b> Anytime <b>Where: </b> 73 St, Central Park <b>Cost:</b> 
+ free</p></p>
+    <p>This bridge, dubbed "the bow bridge", is Central Park's longest bridge.<br>It's one of the most iconic and photographed features of Central Park. <br>Built in 1862, this Victorian-era bridge spans 60 feet across the Central Park Lake and connects Cherry Hill and the Ramble.</p>
+    <button onclick="location.href='https://www.centralpark.com/things-to-do/attractions/bow-bridge/'" type="button">Visit Website (CentralPark.com)</button>
+    <h3>Movie Night at Bryant Park</h3>
+    <p><b>When:</b> Date not yet known. <b>Where: </b> Bryant Park, Fountain Terrace <b>Cost:</b> free</p>
+    <p>Enjoy a feature film under the stars on the lawn at the park! Go to Bryant Park around 5:00 for this iconic New York summer activity.</p>
+    <button onclick="location.href='https://bryantpark.org/activities/movie-nights'" type="button">Visit Website (BryantPark.org)</button>
+  <footer>
+  <p>Website made by PS87</p>
+</footer>
+</body>
+
+
+</html>
